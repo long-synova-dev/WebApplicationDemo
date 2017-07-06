@@ -1,0 +1,21 @@
+﻿<div class="app-content app-background">
+    <div class="group">
+        <br>
+        <md-input-container>
+            <input mdInput type="text" required [(ngModel)]='username' id="username" name="username">
+            <md-placeholder>
+                <i class="material-icons app-input-icon">face</i>Username
+            </md-placeholder>
+        </md-input-container><br><br>
+        <md-input-container>
+            <input mdInput type="password" required [(ngModel)]='password' id="password" name="password">
+            <md-placeholder>
+                <i class="material-icons app-input-icon">lock_open</i>Password
+            </md-placeholder>
+        </md-input-container><br><br />
+        <md-slide-toggle color="primary"><small>Remember me!</small></md-slide-toggle><br><br>
+        <button md-raised-button color="warn" name="action" type="submit" (click)="appLogin()">LOGIN</button>
+        <button md-raised-button color="warn" type="submit" name="register">REGISTER</button><br><br>
+        <span id="err"><small>{{errorMsg}}</small></span>
+    </div>
+</div>
